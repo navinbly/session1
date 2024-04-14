@@ -10,7 +10,7 @@ terraform {
 }
 
 provider "google" {
-  credentials = file{"tfgcp.json"}
+  credentials = file("tfgcp.json")
   project = "navin-terraform-training"
   region  = "asia-south1"
   zone    = "asia-south1-a"
