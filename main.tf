@@ -10,7 +10,7 @@ terraform {
 }
 
 provider "google" {
-   credentials = var.GOOGLE_APPLICATION_CREDENTIALS
+ credentials = file(var.GOOGLE_APPLICATION_CREDENTIALS)
   project = "navin-terraform-training"
   region  = "asia-south1"
   zone    = "asia-south1-a"
